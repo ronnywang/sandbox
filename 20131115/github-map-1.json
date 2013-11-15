@@ -1,0 +1,5 @@
+{
+    "type": "CSVMap",
+    "data": "ronnywang/maps.nlsc.gov.tw/landmark/landmark.csv",
+    "latlng": ["緯度", "經度"]
+}
