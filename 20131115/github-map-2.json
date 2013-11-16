@@ -1,0 +1,13 @@
+{
+  "type": "ColorMap",
+  "map_file": "ronnywang/twgeojson/twtown2010.json",
+  "data_file": "ronnywang/ecolife.epa.gov.tw/avg-2013.csv",
+  "map_columns": ["county", "town"],
+  "data_columns": ["縣市", "鄉鎮市區"],
+  "value1": {
+     "column" : "1-2月平均家戶用電",
+     "color" : [255,0,0],
+     "min" : 0,
+     "max" : 1800
+  }
+}
