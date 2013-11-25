@@ -1,7 +1,7 @@
 {
   "type": "ColorMap",
-  "map_file": "ronnywang/twgeojson/twtown2010.json",
-  "data_file": "ronnywang/ecolife.epa.gov.tw/avg-2013.csv",
+  "map_repo": {"user": "ronnywang", "repository": "twgeojson", "path" : "twtown2010.json"},
+  "data_repo": {"user": "ronnywang", "repository": "ecolife.epa.gov.tw", "path" : "avg-2013.csv"},
   "map_columns": ["county", "town"],
   "data_columns": ["縣市", "鄉鎮市區"],
   "tabs": {
