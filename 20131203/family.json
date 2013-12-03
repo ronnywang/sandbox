@@ -1,0 +1,5 @@
+{
+    "type": "CSVMap",
+    "repo": {"user": "ronnywang", "repository": "sandbox", "path": "20131203/family.csv"},
+    "latlng": ["緯度", "經度"]
+}
