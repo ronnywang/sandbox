@@ -1,0 +1,15 @@
+{
+  "type": "ColorMap",
+  "map_repo": {"user": "ronnywang", "repository": "twgeojson", "path" : "twcounty2010.json"},
+  "data_repo": {"user": "ronnywang", "repository": "sandbox", "path" : "20131208/only-new-taipei.csv"},
+  "map_columns": ["county"],
+  "data_columns": ["縣市"],
+  "tabs": {
+     "New Taipei" : {
+         "column" : "值",
+         "color" : [255,0,0],
+         "min" : 0,
+         "max" : 1
+     }
+  }
+}
