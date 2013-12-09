@@ -1,0 +1,15 @@
+{
+  "type": "ColorMap",
+  "map_repo": {"user": "ronnywang", "repository": "worldbank", "path" : "worldbank.json"},
+  "data_repo": {"user": "ronnywang", "repository": "sandbox", "path" : "20131208/only-china.csv"},
+  "map_columns": ["id"],
+  "data_columns": ["country"],
+  "tabs": {
+     "New Taipei" : {
+         "column" : "value",
+         "color" : [255,0,0],
+         "min" : 0,
+         "max" : 1
+     }
+  }
+}
