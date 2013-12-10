@@ -4,30 +4,33 @@
   "data_repo": {"user": "ronnywang", "repository": "ecolife.epa.gov.tw", "path" : "avg-2013.csv"},
   "map_columns": ["county", "town"],
   "data_columns": ["縣市", "鄉鎮市區"],
+  "color_set" : {
+    "power" : [
+        [0, [255, 255, 255]],
+        [200, [0, 255, 255]],
+        [400, [0, 0, 255]],
+        [600, [255, 255, 0]],
+        [800, [0, 255, 0]],
+        [1000, [255, 0, 0]],
+        [1800, [255, 128, 128]]
+    ]
+  },
   "tabs": {
      "1-2月" : {
          "column" : "1-2月平均家戶用電",
-         "color" : [255,0,0],
-         "min" : 0,
-         "max" : 1800
+         "colors" : "power"
      },
      "3-4月" : {
          "column" : "3-4月平均家戶用電",
-         "color" : [255,0,0],
-         "min" : 0,
-         "max" : 1800
+         "colors" : "power"
      },
      "5-6月" : {
          "column" : "5-6月平均家戶用電",
-         "color" : [255,0,0],
-         "min" : 0,
-         "max" : 1800
+         "colors" : "power"
      },
      "7-8月" : {
          "column" : "7-8月平均家戶用電",
-         "color" : [255,0,0],
-         "min" : 0,
-         "max" : 1800
+         "colors" : "power"
      }
   }
 }
