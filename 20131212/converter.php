@@ -2,7 +2,7 @@
 
 // 將 http://github.com/ronnywang/twgeojson/twivillage2010.2.json 中的面積取出
 // 與主計處人口數算出人口面積的 script
-$fp = fopen('U01VI_101Y9M_TW.utf-8.csv', 'r');
+$fp = fopen($_SERVER['argv'][1], 'r');
 $json = json_decode(file_get_contents('twvillage2010.2.json'));
 $area = array();
 foreach ($json->features as $feature) {
