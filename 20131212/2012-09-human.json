@@ -1,7 +1,7 @@
 {
   "type": "ColorMap",
   "map_repo": {"user": "ronnywang", "repository": "twgeojson", "path" : "twvillage2010.json"},
-  "data_repo": {"user": "ronnywang", "repository": "sandbox", "path" : "20131212/2012-09-human.json"},
+  "data_repo": {"user": "ronnywang", "repository": "sandbox", "path" : "20131212/2012-09-human.csv"},
   "map_columns": ["鄉鎮市區代碼", "村里代號"],
   "data_columns": ["town_id", "village_id"],
   "tabs": {
