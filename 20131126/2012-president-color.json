@@ -1,15 +1,17 @@
 {
   "type": "ColorMap",
   "map_repo": {"user": "ronnywang", "repository": "twgeojson", "path" : "twvillage2010.json"},
-  "data_repo": {"user": "ronnywang", "repository": "sandbox", "path" : "20131126/2012president.csv"},
+  "data_repo": {"user": "ronnywang", "repository": "sandbox", "path" : "20131126/2012president-bluegreen.csv"},
   "map_columns": ["county", "town", "village"],
   "data_columns": ["縣市", "鄉鎮", "村里"],
   "tabs": {
      "藍綠地圖" : {
-         "column1" : "蔡蘇得票",
-         "column2": "馬吳得票",
-         "color1" : [0,255,0],
-         "color2": [0,0,255]
+         "column" : "藍綠比例",
+         "colors" : [
+           [-1, [0, 0, 255]],
+           [0, [255, 255, 255]],
+           [1, [0, 255, 0]]
+         ]
      }
   }
 }
