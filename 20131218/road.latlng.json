@@ -1,0 +1,5 @@
+{
+    "type": "CSVMap",
+    "repo": {"user": "ronnywang", "repository": "sandbox", "path": "20131218/road.latlng.csv"},
+    "latlng": ["地圖座標(縱坐標)", "地圖座標(橫坐標)"]
+}
