@@ -1,0 +1,5 @@
+{
+    "type": "CSVMap",
+    "repo": {"user": "ronnywang", "repository": "sandbox", "path": "20131221/公害陳情案件分佈地理圖資.csv"},
+    "latlng": ["LAT", "LON"]
+}
