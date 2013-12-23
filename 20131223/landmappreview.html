@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Landmap Preview</title>
+</head>
+<body>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<form id="form">
+    landmaps URL: <input type="text" id="url" style="width: 600px" value="http://landmaps.nlsc.gov.tw/S_Maps/qryTileMapIndex?flag=2&office=HE&sect=0831&landno=632"><br>
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<script>
+$('#form').submit(function(e){
+    e.preventDefault();
+
+    var url = $('#url').val();
+
+    $.get(url, function(ret){
+        $('#img').attr('src', 'data:image/png;base64,' + ret[1].image);
+        $('#textarea').text(JSON.stringify(ret, "", 2));
+    }, 'jsonp');
+});
+</script>
+<img id="img">
+<hr>
+<textarea id="textarea" style="width: 100%; height: 300px"></textarea>
+</body>
+</html>
