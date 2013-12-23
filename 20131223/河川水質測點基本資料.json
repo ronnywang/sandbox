@@ -1,0 +1,5 @@
+{
+    "type": "CSVMap",
+    "repo": {"user": "g0v", "repository": "epa-data", "path": "raw/河川水質測點基本資料.csv"},
+    "latlng": ["TWD97Lat", "TWD97Lon"]
+}
