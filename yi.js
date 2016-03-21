@@ -6,7 +6,7 @@ var saveData = (function () {
     document.body.appendChild(a);
     a.style = "display: none";
     return function (data, fileName) {
-            blob = new Blob(data, {type: "octet/stream"}),
+            blob = new Blob([data], {type: "octet/stream"}),
             url = window.URL.createObjectURL(blob);
         a.href = url;
         a.download = fileName;
