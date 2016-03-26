@@ -1,6 +1,11 @@
 tr=document.getElementsByClassName('stats-chart-gviz')[0].getElementsByTagName('svg')[0].nextSibling.getElementsByTagName('tr');
 ret="";
-for(var i=1;i<tr.length;i++){tds=tr[i].getElementsByTagName('td');ret+=(tds[0].innerText+","+tds[1].innerText+"\r\n");}
+var prev_value = 0;
+for(var i = 1; i < tr.length; i ++){
+    tds = tr[i].getElementsByTagName('td');
+    ret += (tds[0].innerText + "," + tds[1].innerText + "," + (parseInt(td[1].innerText) - prev_value) + "\r\n");
+    prev_value = parseInt(td[1].innerText);
+}
 var saveData = (function () {
     var a = document.createElement("a");
     document.body.appendChild(a);
