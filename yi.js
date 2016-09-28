@@ -5,7 +5,7 @@ for(var i = 1; i < tr.length; i ++){
     tds = tr[i].getElementsByTagName('td');
     v = parseInt(tds[1].innerText.replace(/,/g, ''));
     ret += (tds[0].innerText + "," + v + "," + parseInt(v - prev_value) + "\r\n");
-    prev_value = parseInt(tds[1].innerText);
+    prev_value = v;
 }
 var saveData = (function () {
     var a = document.createElement("a");
