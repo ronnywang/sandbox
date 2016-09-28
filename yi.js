@@ -3,7 +3,8 @@ ret="";
 var prev_value = 0;
 for(var i = 1; i < tr.length; i ++){
     tds = tr[i].getElementsByTagName('td');
-    ret += (tds[0].innerText + "," + tds[1].innerText + "," + (parseInt(tds[1].innerText) - prev_value) + "\r\n");
+    v = praseInt(tds[1].innerText.replace(/,/g, ''));
+    ret += (tds[0].innerText + "," + v + "," + (parseInt(v - prev_value) + "\r\n");
     prev_value = parseInt(tds[1].innerText);
 }
 var saveData = (function () {
